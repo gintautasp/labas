@@ -1,7 +1,8 @@
 <?php
-	session_start ();
+
+	define ( 'DIR_MAIN', dirname ( __FILE__  ) . '/' );
 	
-	$sessijos_id = session_id();
+	require DIR_MAIN . 'config.php';
 
 	if ( isset ( $_GET [ 'm' ] ) ) {
 	
